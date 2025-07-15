@@ -21,6 +21,14 @@ typedef struct
 } CircularQueue;
 
 
+void initQueue(CircularQueue *q);
 
+int isQueueFull(CircularQueue *q);
+
+int isQueueEmpty(CircularQueue *q);
+
+void enqueu(CircularQueue *q, SensorData data);
+
+void getAllData(CircularQueue *q, SensorData *copyBuffer, int *size);
 
 #endif
